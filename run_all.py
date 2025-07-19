@@ -1,15 +1,20 @@
 import os
 
-print("🔍 1. Ejecutando scrapper.py (descarga de ScienceDaily)...")
+print("🚀 Ejecutando pipeline completo...")
+
+print("📥 Extrayendo artículos de ScienceDaily...")
 os.system("python scrapper.py")
 
-print("📝 2. Generando archivos Markdown desde el CSV...")
+print("📝 Generando artículos .md en inglés...")
 os.system("python generate.py")
 
-print("💡 3. Convirtiendo Markdown a HTML...")
+print("🌐 Traduciendo y generando contenido en español...")
+os.system("python translate_and_trendify.py")
+
+print("📄 Convirtiendo a HTML...")
 os.system("python convert_to_html.py")
 
-print("📄 4. Generando índice con todos los posts...")
+print("🧭 Actualizando index.html...")
 os.system("python generate_index.py")
 
-print("✅ Sitio generado correctamente. Abrí 'index.html' en tu navegador.")
+print("✅ Todo listo. Sitio actualizado.")

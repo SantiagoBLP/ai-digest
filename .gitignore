@@ -1,0 +1,28 @@
+# Ignorar claves privadas
+api_keys/
+
+# Ignorar código fuente del backend y scrappers
+scrapper.py
+generate.py
+translate_and_trendify.py
+convert_to_html.py
+run_all.py
+update_and_push.bat
+
+# Ignorar posts originales en inglés
+posts/
+
+# Ignorar temporales y compilados
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.tmp
+
+# Ignorar markdown traducido si no querés subir los .md (opcional)
+# posts_es/*.md
+
+# Incluir solo HTML, CSS y assets generados
+!index.html
+!style.css
+!html_posts/
